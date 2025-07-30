@@ -1,8 +1,15 @@
 {
   "dependencies": {
+    "aws-serverless-express": "^3.4.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
     "claudia": "^5.14.1"
+  },
+  "scripts": {
+    "init-claudia": "claudia generate-serverless-express-proxy --express-module server",
+    "start": "node local.js",
+    "deploy": "claudia create --api-module server --region us-east-1 --config config.json",
+    "update": "claudia update --api-module server"
   }
 }
