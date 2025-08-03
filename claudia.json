@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "express-api-prototype-executor",
+    "name": "express-api-prototype",
+    "region": "ap-northeast-1"
+  },
+  "api": {
+    "id": "bwrni8hvfb"
+  }
+}

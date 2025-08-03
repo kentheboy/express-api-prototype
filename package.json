@@ -1,4 +1,7 @@
 {
+  "name": "express-api-prototype",
+  "version": "1.0.0",
+  "description": "A prototype Express API for AWS Lambda using Claudia.js",
   "dependencies": {
     "aws-serverless-express": "^3.4.0",
     "express": "^5.1.0"
@@ -9,7 +12,7 @@
   "scripts": {
     "init-claudia": "claudia generate-serverless-express-proxy --express-module server",
     "start": "node local.js",
-    "deploy": "claudia create --api-module server --region us-east-1 --config config.json",
-    "update": "claudia update --api-module server"
+    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-northeast-1  --runtime nodejs18.x",
+    "update": "claudia update"
   }
 }
